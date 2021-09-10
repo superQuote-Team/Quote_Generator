@@ -1,127 +1,111 @@
-@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100;200;300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Allison&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Allison&family=Playfair+Display:wght@400;500&display=swap");
-/* ==============================AutoComplete====================================================== */
-* { box-sizing: border-box; }
-body {
-  font: 16px Arial;
-}
-.autocomplete {
-  /*the container must be positioned relative:*/
-  position: relative;
-  display: inline-block;
-}
-input {
-  border: 1px solid transparent;
-  background-color: #f1f1f1;
-  padding: 10px;
-  font-size: 16px;
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Playfair+Display:wght@400;500&display=swap');
+*{
+    margin:0;
+    padding: 0;
 }
 
-.autocomplete-items {
-  position: absolute;
-  /* border: 1px solid #d4d4d4; */
-  border-bottom: none;
-  border-top: none;
-  z-index: 99;
-  /*position the autocomplete items to be the same width as the container:*/
-  top: 100%;
-  left: 0;
-  right: 0;
-}
-.autocomplete-items div {
-  padding: 5px 100px 0px 10px;
-  margin-left: 66%;
-  cursor: pointer;
-  background-color: #fff;
-  border-bottom: 1px solid #d4d4d4;
-}
-.autocomplete-items div:hover {
-  /*when hovering an item:*/
-  background-color: #e9e9e9;
-}
-.autocomplete-active {
-  /*when navigating through the items using the arrow keys:*/
-  background-color: DodgerBlue !important;
-  color: #ffffff;
-}
-/* ==============================AutoComplete====================================================== */
-* {
-  margin: 0;
-  padding: 0;
-}
+body{
+    background-image: url(../img/467862_quotes-background-maker-sweet-best-for-desktop-hd-wallpapers_800x800_h.webp);
+    font-family:'Playfair Display', serif !important;
 
-body {
-  font-family: "Playfair Display", serif !important;
 }
 
 .input-group_mb-3 {
-  height: 25px;
-  width: 20%;
-  margin-left: 5%;
-  margin-bottom: 40px;
-  display: flex;
-  justify-content: space-between;
+    height: 25px;
+    width: 20%;
+    margin-left: 5%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
-h1 {
-  font-family: "Playfair Display", serif;
-  text-align: center;
-  margin: 40px 0 !important;
-}
-
-.form {
-  padding: 2% 5%;
-  width: 40vw;
-  margin-left: 66%;
-  margin-right: 15%;
-  border-radius: 4px;
-  box-shadow: black 1px 3px;
-  color: grey;
-}
-.btn {
-  padding: 2% 5% 2% 5% !important;
-  border: 1px solid black !important;
-  border-radius: 4px;
-  display: inline;
-  color: grey;
-  box-shadow: black 1px 3px;
+h1{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin: 40px 0 !important;
+    color:white;
 }
 
 
+.form { 
+    padding: 2% 5%;
+    width: 40vw;
+    margin-left: 66%;
+    margin-right: 15%;
+    border-radius: 4px;
+    box-shadow: black 1px 3px;
+    color: rgb(128, 128, 128);
+}
+.btn{
+    padding: 2% 5% 2% 5%!important;
+    border: 1px solid black !important;
+    border-radius: 4px;
+    display: inline;
+    color:grey;
+    box-shadow: black 1px 3px;
+}
+
+/* input[type=text] {
+    width: 35vw; */
+ 
 .quote-content {
-  text-align: center;
-  font-size: 1.5em;
-  padding-top: 45px;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 45px;
 }
 
-.quote-author {
-  font-family: "Allison", cursive;
-  font-size: 2em;
+.quote-author{ 
+    font-family: 'Allison', cursive;
+    font-size: 2em;
 }
 
-#erik {
-  padding: 2% 5%;
-  margin: 9% 5% 2% 27%;
-  color: grey;
-  background-color: white;
-  text-align: center;
-  border-radius: 51px;
-  box-shadow: black 1px 3px;
-  font-size: 1em;
+#erik{
+    padding: 2% 5%;
+    margin: 9% 5% 2% 27%;
+    color: grey;
+    background-color: white;
+    text-align: center;
+    border-radius: 51px;
+    box-shadow: black 1px 3px;
+    font-size: 1em;
 }
 
-.carousel-item {
-  background-color: beige;
-  /* border-radius: 10px; */
-  box-shadow: black 2px 2px;
-  padding: 5%;
-  /* margin: 0 5%; */
-  height: 45vh;
-  width: 20vw;
-  font-size: 1.3em;
-  text-align: center;
-  /* padding-top: 45px; */
+
+
+.carousel-item{
+/*background-image: url(../img/179-1794660_inspirational-twitter-background-quotes.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;*/
+color:white;
+
+    /* border-radius: 10px; */
+    box-shadow: white 2px 2px;
+    padding: 5%;
+    /* margin: 0 5%; */
+    height:200%;
+    width:200%;
+    font-size: 1.3em;
+    text-align: center;
+    padding-top: 45px;
+}
+
+/* .carousel-inner .carousel-item {
+    transition: -webkit-transform 15s ease;
+    transition: transform 15s ease;
+    transition: transform 15s ease, -webkit-transform .1s ease;
+  } */
+
+#text{
+    color: white;
+    margin-right: 11%;
+    margin-left: 12%;
+}
+#carouselExampleFade{
+    margin:5% 0% 20% 0%
 }
 
 
