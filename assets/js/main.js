@@ -14,7 +14,7 @@ class Quote {
 }
 
 //Event Handler für Enter key
-document.getElementById("btn").addEventListener("keypress", (e) => {
+document.querySelector('input').addEventListener("keypress", (e) => {
     if (e.key == "Enter") {
         getQuotes()
     }
