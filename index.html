@@ -17,12 +17,13 @@
   <body>
     <h1>Super-Quote</h1>
     <!-- =======================================Search-Bar======================================= -->
-    <div class="input-group_mb-3">
-      <input type="text" class="form" placeholder="   search author..." />
-      <button class="btn" type="button" id="btn" onclick="getQuotes()">
-        search
-      </button>
-    </div>
+    <!--Make sure the form has the autocomplete function switched off:-->
+    <form autocomplete="off" action="/action_page.php">
+      <div class="input-group_mb-3 autocomplete">
+          <input id="myInput" type="text" class="form" name="myAuthor" placeholder="   search author...">
+          <button class="btn" type="button" id="btn" onclick="getQuotes()"> search </button>
+      </div>
+    </form>
     <!--=======================================Karussel-Anfang======================================= -->
     <div
       id="carouselExampleFade"
