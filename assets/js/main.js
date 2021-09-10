@@ -14,11 +14,11 @@ class Quote {
 }
 
 //Event Handler für Enter key
-document.querySelector('input').addEventListener("keypress", (e) => {
-    if (e.key == "Enter") {
-        getQuotes()
-    }
-})
+document.querySelector("input").addEventListener("keypress", (e) => {
+  if (e.key == "Enter") {
+    getQuotes();
+  }
+});
 
 //API
 function getQuotes() {
@@ -105,6 +105,7 @@ function changeColor() {
     colorArray[randomColor];
 }
 
+//to get generate random quote and change random color
 function randomQuote() {
   changeColor();
   randomQuoteGenerator();
@@ -132,3 +133,10 @@ function randomQuoteGenerator() {
                 </div>`;
     });
 }
+
+//default set on random Quote onload
+document.body.onload = function () {
+  randomQuote();
+};
+
+//to fit long quote into the
