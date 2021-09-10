@@ -12,6 +12,14 @@ class Quote {
             </div>`;
   }
 }
+
+//Event Handler für Enter key
+document.querySelector('input').addEventListener("keypress", (e) => {
+    if (e.key == "Enter") {
+        getQuotes()
+    }
+})
+
 //API
 function getQuotes() {
   let filterValue = document.querySelector("input").value;
